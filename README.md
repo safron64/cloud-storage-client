@@ -1,38 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📦 Cloud Storage Client
 
-## Getting Started
+Веб-приложение для управления файлами в облачном хранилище, построенное с использованием современных технологий, таких как **Next.js**, **TypeScript** и **Ant Design**. Приложение предоставляет удобный интерфейс для загрузки, управления и обмена файлами.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🚀 Используемые технологии
+
+- **Next.js**: Фреймворк для серверного рендеринга и генерации статических сайтов.
+- **TypeScript**: Язык программирования с строгой типизацией, основанный на JavaScript.
+- **Sass (SCSS)**: Для стилизации компонентов с использованием модульных стилей.
+- **Ant Design**: Библиотека UI-компонентов для создания удобного и адаптивного интерфейса.
+- **Axios**: Для выполнения HTTP-запросов и взаимодействия с бэкендом.
+- **React Selecto**: Для интерактивного выбора элементов и файлов в интерфейсе.
+
+---
+
+## 🗂️ Структура проекта
+
+```
+📦cloud-storage-client
+ ┣ 📂components
+ ┃ ┣ 📂auth              # Формы для входа и регистрации
+ ┃ ┣ 📂FileActions       # Действия с файлами (удаление, обмен)
+ ┃ ┣ 📂FileCard          # Компонент для отображения информации о файле
+ ┃ ┣ 📂FileList          # Компонент для отображения списка файлов
+ ┃ ┣ 📂Header            # Шапка приложения с навигацией
+ ┃ ┗ 📂UploadButton      # Кнопка для загрузки файлов
+ ┣ 📂core                 # Основные утилиты (например, настройка Axios)
+ ┃ ┗ 📜axios.ts
+ ┣ 📂layouts              # Компоненты для структуры страниц
+ ┃ ┣ 📜DashboardLayout.tsx
+ ┃ ┗ 📜Layout.tsx
+ ┣ 📂modules              # Модули для реализации функций (например, файлы)
+ ┃ ┗ 📜Files.tsx
+ ┣ 📂pages                # Страницы приложения (маршруты)
+ ┃ ┣ 📂dashboard          # Страницы панели управления
+ ┃ ┃ ┣ 📜auth.tsx
+ ┃ ┃ ┣ 📜index.tsx
+ ┃ ┃ ┣ 📜photos.tsx
+ ┃ ┃ ┣ 📜profile.tsx
+ ┃ ┃ ┗ 📜trash.tsx
+ ┃ ┣ 📜index.tsx          # Главная страница
+ ┃ ┣ 📜_app.tsx           # Общий компонент для всего приложения
+ ┃ ┗ 📜_document.tsx      # Настройка структуры HTML-документа
+ ┣ 📂public               # Папка для статических файлов
+ ┃ ┣ 📜favicon.ico        # Иконка сайта
+ ┃ ┣ 📜next.svg
+ ┃ ┣ 📜thirteen.svg
+ ┃ ┗ 📜vercel.svg
+ ┣ 📂styles               # Стили приложения
+ ┃ ┣ 📜globals.css        # Глобальные стили
+ ┃ ┣ 📜Home.module.scss   # Стили для главной страницы
+ ┃ ┗ 📜Profile.module.scss # Стили для страницы профиля
+ ┣ 📂utils                # Утилиты
+ ┃ ┣ 📜checkAuth.ts       # Проверка авторизации
+ ┃ ┣ 📜getColorByExtension.ts # Получение цвета по расширению файла
+ ┃ ┣ 📜getExtensionFromFileName.ts # Получение расширения файла
+ ┃ ┗ 📜isImage.ts         # Проверка, является ли файл изображением
+ ┣ 📜.gitignore           # Исключения для Git
+ ┣ 📜next-env.d.ts        # Конфигурация среды Next.js
+ ┣ 📜next.config.js       # Конфигурация Next.js
+ ┣ 📜package-lock.json    # Зависимости проекта
+ ┣ 📜package.json         # Основная информация о проекте и скрипты
+ ┣ 📜README.md            # Документация проекта
+ ┗ 📜tsconfig.json        # Конфигурация TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📖 Как пользоваться
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Установка и запуск
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Установите зависимости:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Запустите приложение в режиме разработки:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-To learn more about Next.js, take a look at the following resources:
+### Скрипты
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: Запускает приложение в режиме разработки.
+- `npm run build`: Сборка проекта для продакшена.
+- `npm run start`: Запуск собранного приложения.
+- `npm run lint`: Проверка кода с использованием ESLint.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Функциональность
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Авторизация:**
+   - Вход и регистрация пользователей.
+2. **Управление файлами:**
+   - Загрузка, удаление, просмотр файлов.
+   - Поддержка различных форматов файлов.
+3. **Панель управления:**
+   - Просмотр списка файлов, управление профилем, работа с корзиной.
+4. **Интерактивный интерфейс:**
+   - Выбор файлов через `React Selecto`.
+   - UI-элементы от Ant Design.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
