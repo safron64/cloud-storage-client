@@ -20,50 +20,50 @@
 ```
 📦cloud-storage-client
  ┣ 📂components
- ┃ ┣ 📂auth              # Формы для входа и регистрации
- ┃ ┣ 📂FileActions       # Действия с файлами (удаление, обмен)
- ┃ ┣ 📂FileCard          # Компонент для отображения информации о файле
- ┃ ┣ 📂FileList          # Компонент для отображения списка файлов
- ┃ ┣ 📂Header            # Шапка приложения с навигацией
- ┃ ┗ 📂UploadButton      # Кнопка для загрузки файлов
- ┣ 📂core                 # Основные утилиты (например, настройка Axios)
+ ┃ ┣ 📂auth                         # Формы для входа и регистрации
+ ┃ ┣ 📂FileActions                  # Действия с файлами (удаление, обмен)
+ ┃ ┣ 📂FileCard                     # Компонент для отображения информации о файле
+ ┃ ┣ 📂FileList                     # Компонент для отображения списка файлов
+ ┃ ┣ 📂Header                       # Шапка приложения с навигацией
+ ┃ ┗ 📂UploadButton                 # Кнопка для загрузки файлов
+ ┣ 📂core                           # Основные утилиты (например, настройка Axios)
  ┃ ┗ 📜axios.ts
- ┣ 📂layouts              # Компоненты для структуры страниц
+ ┣ 📂layouts                        # Компоненты для структуры страниц
  ┃ ┣ 📜DashboardLayout.tsx
  ┃ ┗ 📜Layout.tsx
- ┣ 📂modules              # Модули для реализации функций (например, файлы)
+ ┣ 📂modules                        # Модули для реализации функций (например, файлы)
  ┃ ┗ 📜Files.tsx
- ┣ 📂pages                # Страницы приложения (маршруты)
- ┃ ┣ 📂dashboard          # Страницы панели управления
+ ┣ 📂pages                          # Страницы приложения (маршруты)
+ ┃ ┣ 📂dashboard                    # Страницы панели управления
  ┃ ┃ ┣ 📜auth.tsx
  ┃ ┃ ┣ 📜index.tsx
  ┃ ┃ ┣ 📜photos.tsx
  ┃ ┃ ┣ 📜profile.tsx
  ┃ ┃ ┗ 📜trash.tsx
- ┃ ┣ 📜index.tsx          # Главная страница
- ┃ ┣ 📜_app.tsx           # Общий компонент для всего приложения
- ┃ ┗ 📜_document.tsx      # Настройка структуры HTML-документа
- ┣ 📂public               # Папка для статических файлов
- ┃ ┣ 📜favicon.ico        # Иконка сайта
+ ┃ ┣ 📜index.tsx                    # Главная страница
+ ┃ ┣ 📜_app.tsx                     # Общий компонент для всего приложения
+ ┃ ┗ 📜_document.tsx                # Настройка структуры HTML-документа
+ ┣ 📂public                         # Папка для статических файлов
+ ┃ ┣ 📜favicon.ico                  # Иконка сайта
  ┃ ┣ 📜next.svg
  ┃ ┣ 📜thirteen.svg
  ┃ ┗ 📜vercel.svg
- ┣ 📂styles               # Стили приложения
- ┃ ┣ 📜globals.css        # Глобальные стили
- ┃ ┣ 📜Home.module.scss   # Стили для главной страницы
- ┃ ┗ 📜Profile.module.scss # Стили для страницы профиля
- ┣ 📂utils                # Утилиты
- ┃ ┣ 📜checkAuth.ts       # Проверка авторизации
- ┃ ┣ 📜getColorByExtension.ts # Получение цвета по расширению файла
- ┃ ┣ 📜getExtensionFromFileName.ts # Получение расширения файла
- ┃ ┗ 📜isImage.ts         # Проверка, является ли файл изображением
- ┣ 📜.gitignore           # Исключения для Git
- ┣ 📜next-env.d.ts        # Конфигурация среды Next.js
- ┣ 📜next.config.js       # Конфигурация Next.js
- ┣ 📜package-lock.json    # Зависимости проекта
- ┣ 📜package.json         # Основная информация о проекте и скрипты
- ┣ 📜README.md            # Документация проекта
- ┗ 📜tsconfig.json        # Конфигурация TypeScript
+ ┣ 📂styles                         # Стили приложения
+ ┃ ┣ 📜globals.css                  # Глобальные стили
+ ┃ ┣ 📜Home.module.scss             # Стили для главной страницы
+ ┃ ┗ 📜Profile.module.scss          # Стили для страницы профиля
+ ┣ 📂utils                          # Утилиты
+ ┃ ┣ 📜checkAuth.ts                 # Проверка авторизации
+ ┃ ┣ 📜getColorByExtension.ts       # Получение цвета по расширению файла
+ ┃ ┣ 📜getExtensionFromFileName.ts  # Получение расширения файла
+ ┃ ┗ 📜isImage.ts                   # Проверка, является ли файл изображением
+ ┣ 📜.gitignore                     # Исключения для Git
+ ┣ 📜next-env.d.ts                  # Конфигурация среды Next.js
+ ┣ 📜next.config.js                 # Конфигурация Next.js
+ ┣ 📜package-lock.json              # Зависимости проекта
+ ┣ 📜package.json                   # Основная информация о проекте и скрипты
+ ┣ 📜README.md                      # Документация проекта
+ ┗ 📜tsconfig.json                  # Конфигурация TypeScript
 ```
 
 ---
